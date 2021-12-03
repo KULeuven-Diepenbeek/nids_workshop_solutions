@@ -73,5 +73,14 @@ for d in dataset:
     # end of iteration over words
 
 # PRINTS all the flowids along with the sizes
+number_of_tracked_flowids = 0
+number_of_malicious_flowids = 0
 for flowid in library:
-    print(flowid, '->', library[flowid])
+    if library[flowid] > 10:
+        print(flowid, '->', library[flowid])
+        number_of_malicious_flowids += 1
+    number_of_tracked_flowids += 1
+
+# print summary
+print("\nWe've received %d unique FlowIDs" % number_of_tracked_flowids)
+print("\t%d FlowIDs exceed the allowed bandwidth" % number_of_malicious_flowids)
