@@ -2,8 +2,8 @@
 
 import numpy as np
 
-old_filename = '../data/dataset_packets_v1.npy'
-new_filename = '../data/dataset_packets_v2.npy'
+old_filename = 'data/dataset_packets_v1.npy'
+new_filename = 'data/dataset_packets_v2.npy'
 
 packet_array = np.load(old_filename)
 
