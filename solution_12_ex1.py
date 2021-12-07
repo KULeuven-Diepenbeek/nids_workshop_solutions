@@ -60,8 +60,6 @@ for d in dataset:
         # print(word, end='')
         wordcounter += 1
     
-    print("ACK")
-
     # end of iteration over words
 
     framecounter += 1

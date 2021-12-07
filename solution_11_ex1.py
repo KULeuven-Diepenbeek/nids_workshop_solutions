@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 
+import numpy as np
+
 # LOAD THE DATASET
 from lib.dataset import NIDSDataset
 
